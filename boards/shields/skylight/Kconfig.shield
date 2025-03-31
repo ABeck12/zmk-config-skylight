@@ -1,3 +1,7 @@
-config SHIELD_SKYLIGHT
-    def_bool $(shields_list_contains, skylight)
-   
+# No whitespace after the comma or in your part name!
+config SHIELD_SKYLIGHT_LEFT
+    def_bool $(shields_list_contains,skylight_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_SKYLIGHT_RIGHT
+    def_bool $(shields_list_contains,skylight_right)

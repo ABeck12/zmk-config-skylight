@@ -1,6 +1,17 @@
-if SHIELD_SKYLIGHT
-            
+if SHIELD_SKYLIGHT_LEFT
+
+# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "skylight"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SKYLIGHT_LEFT || SHIELD_SKYLIGHT_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
