@@ -13,4 +13,4 @@
             , <&pro_micro 13 GPIO_ACTIVE_HIGH>
             ;
     };
-}
+};
