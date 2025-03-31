@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        // zmk,kscan = &kscan0;
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
@@ -13,9 +13,9 @@
         wakeup-source;
 
         row-gpios
-            = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&nice_nano 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
     };
