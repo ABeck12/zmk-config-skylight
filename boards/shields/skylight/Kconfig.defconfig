@@ -1,0 +1,6 @@
+if SHIELD_SKYLIGHT
+            
+config ZMK_KEYBOARD_NAME
+    default "skylight"
+
+endif
