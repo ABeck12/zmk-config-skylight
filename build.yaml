@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: skylight_left
-  - board: nice_nano_v2
-    shield: skylight_right
+    shield: skylight
+  # - board: nice_nano_v2
+  #   shield: skylight_right
