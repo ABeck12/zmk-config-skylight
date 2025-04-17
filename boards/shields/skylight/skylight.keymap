@@ -8,23 +8,22 @@
 
 / {
     macros {
-        // SUPER + PG UP macro
         supgup: supgup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings 
-                = <¯o_press &kp LGUI>
+            bindings
+                = <&macro_press &kp LGUI>
                 , <&kp PG_UP>
-                , <¯o_release &kp LGUI>;
+                , <&macro_release &kp LGUI>;
         };
         // SUPER + PG DOWN macro
         supgdn: supgdn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings 
-                = <¯o_press &kp LGUI>
+            bindings
+                = <&macro_press &kp LGUI>
                 , <&kp PG_DN>
-                , <¯o_release &kp LGUI>;
+                , <&macro_release &kp LGUI>;
         };
     };
 
