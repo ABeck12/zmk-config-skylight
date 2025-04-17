@@ -7,6 +7,27 @@
 #define UPPER 2
 
 / {
+    macros {
+        // SUPER + PG UP macro
+        supgup: supgup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <¯o_press &kp LGUI>
+                , <&kp PG_UP>
+                , <¯o_release &kp LGUI>;
+        };
+        // SUPER + PG DOWN macro
+        supgdn: supgdn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <¯o_press &kp LGUI>
+                , <&kp PG_DN>
+                , <¯o_release &kp LGUI>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,7 +73,7 @@
             bindings = <
 &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP  &kp K_PREV  &kp K_PP   &kp K_NEXT          &kp C_BRI_DN &kp C_BRI_UP &trans    &trans   &kp PSCRN &trans
 &kp GRAVE  &kp N1       &kp N2        &kp N3      &kp N4     &kp N5              &kp N6       &kp N7       &kp N8    &kp N9   &kp N0    &trans
-&trans     &trans       &trans        &trans      &kp HOME   &kp END             &trans       &kp LEFT     &kp DOWN  &kp UP   &kp RIGHT &trans
+&trans     &trans       &supgup        &supgdn      &kp HOME   &kp END             &trans       &kp LEFT     &kp DOWN  &kp UP   &kp RIGHT &trans
 &trans     &trans       &trans        &trans      &kp PG_DN  &kp PG_UP           &kp KP_PLUS  &kp MINUS    &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
                         &trans        &trans      &trans     &kp DEL             &trans       &trans       &trans    &trans
             >;
