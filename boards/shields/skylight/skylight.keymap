@@ -72,7 +72,7 @@
             bindings = <
 &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP  &kp K_PREV  &kp K_PP   &kp K_NEXT      &kp C_BRI_DN &kp C_BRI_UP &trans    &trans   &kp PSCRN &trans
 &trans     &trans       &trans        &trans      &trans     &trans          &trans       &trans       &trans    &trans   &trans    &kp EQUAL
-&trans     &trans       &supgup        &supgdn    &kp HOME   &kp END         &kp LEFT     &kp UP       &kp DOWN  &kp RIGHT &trans   &trans
+&trans     &trans       &supgup        &supgdn    &kp HOME   &kp END         &kp LEFT     &kp DOWN     &kp UP    &kp RIGHT &trans   &trans
 &trans     &trans       &trans        &trans      &kp PG_DN  &kp PG_UP       &trans       &trans       &trans    &kp LBKT &kp RBKT  &kp BSLH
                         &trans        &trans      &kp DEL    &trans          &trans       &trans       &trans    &trans
             >;
