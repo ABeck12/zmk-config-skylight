@@ -71,22 +71,22 @@
 // |       |      |        |       | PGDN | PGUP |                          |       |       |       |      |       |       |
 //                |        |       |  DEL |      |                          |       |       |       |      | 
             bindings = <
-&kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP  &kp K_PREV  &kp K_PP   &kp K_NEXT      &kp C_BRI_DN &kp C_BRI_UP &trans    &trans   &kp PSCRN &kp GRAVE
-&trans     &trans       &trans        &trans      &trans     &trans          &trans       &trans       &trans    &trans   &trans    &trans
-&trans     &trans       &supgup        &supgdn    &kp HOME   &kp END         &kp LEFT     &kp DOWN     &kp UP    &kp RIGHT &trans   &trans
-&trans     &trans       &trans        &trans      &kp PG_DN  &kp PG_UP       &trans       &trans       &trans    &kp LBKT &kp RBKT  &kp BSLH
+&kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP  &kp K_PREV  &kp K_PP   &kp K_NEXT      &kp C_BRI_DN &kp C_BRI_UP &trans    &trans    &kp PSCRN &kp GRAVE
+&trans      &trans       &trans        &trans      &trans     &trans          &trans       &trans       &trans    &trans    &trans    &trans
+&tog NUMPAD &trans       &supgup       &supgdn     &kp HOME   &kp END         &kp LEFT     &kp DOWN     &kp UP    &kp RIGHT &trans    &trans
+&trans      &trans       &trans        &trans      &kp PG_DN  &kp PG_UP       &trans       &trans       &trans    &kp LBKT  &kp RBKT  &kp BSLH
                         &trans        &trans      &kp DEL    &trans          &trans       &trans       &trans    &trans
             >;
         };
 
-/*         numpad_layer { */
-/*             bindings = < */
-/* &trans     &trans       &trans        &trans      &trans     &trans          &trans       &trans       &trans    &trans   &trans    &trans */
-/* &trans     &trans       &trans        &trans      &trans     &trans          &trans       &kp N7       &kp N8    &kp N9   &trans    &trans */
-/* &trans     &trans       &trans        &trans      &trans     &trans          &trans       &kp N4       &kp N5    &kp N6   &trans    &trans */
-/* &trans     &trans       &trans        &trans      &trans     &trans          &trans       &kp N1       &kp N2    &kp N3   &trans    &trans */
-/*                         &trans        &trans      &trans     &trans          &trans       &trans       &kp N0    &kp DOT */
-/*             >; */
-/*         }; */
+        numpad_layer {
+            bindings = <
+&tog NUMPAD &none   &none   &none   &none   &none          &none    &none   &none   &none   &none    &none
+&none       &none   &none   &none   &none   &none          &none    &kp N7  &kp N8  &kp N9   &none    &none
+&none       &none   &none   &none   &none   &none          &none    &kp N4  &kp N5  &kp N6   &none    &none
+&none       &none   &none   &none   &none   &none          &none    &kp N1  &kp N2  &kp N3   &none    &none
+                    &none   &none   &none   &none          &none    &none   &kp N0  &kp DOT
+            >;
+        };
     };
  };
