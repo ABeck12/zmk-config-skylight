@@ -50,13 +50,13 @@
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 |  BT2  |  BT3  |  BT4 |  BT5 |                                  |      |       |       |      |      |      |
-// |       |     | supgup| supgdn|      |      |                                  |      |       |       |      |      |      |
+// |       |     | supgup| supgdn|  +   |   _  |                                  |  =   |   -   |       |      |      |      |
 // |   ~   |  <  |   (   |   {   |  [   |   \  |                                  |  |   |   ]   |  }    |  )   |   >  |   `  |
 // |       |     |       |       |      |      |                                  |      |       |       |      |      |      |
 //               |       |       |      |      |                                  |      |       |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &trans       &supgup      &supgdn      &trans       &trans           &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &trans       &supgup      &supgdn      &kp PLUS     &kp UNDERSCORE   &kp EQUAL &kp MINUS &trans    &trans    &trans    &trans
 &kp TILDE  &kp LT       &kp LPAR     &kp LBRC     &kp LBKT     &kp BSLH         &kp PIPE  &kp RBKT  &kp RBRC  &kp RPAR  &kp GT    &kp GRAVE
 &trans     &trans       &trans       &trans       &trans       &trans           &trans    &trans    &trans    &trans    &trans    &trans
                         &trans       &trans       &trans       &trans           &trans    &trans    &trans    &trans
